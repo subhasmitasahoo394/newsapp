@@ -2,12 +2,7 @@ import "./App.css";
 import React, { useState } from "react";
 import NavBar from "./Components/NavBar.js";
 import News from "./Components/News.js";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
@@ -17,7 +12,6 @@ const App = () => {
 
   return (
     <div>
-      <Router>
         <NavBar />
         <LoadingBar height={3} color="#f11946" progress={progress} />
 
@@ -115,7 +109,6 @@ const App = () => {
           />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      </Router>
     </div>
   );
 };

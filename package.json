@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "type": "module",
   "private": true,
+    "homepage": "https://subhasmitasahoo394.github.io/newsapp",
+
 
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
